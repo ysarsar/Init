@@ -1,0 +1,2 @@
+ssh -X ysarsar@10.12.100.96
+export DISPLAY=:0

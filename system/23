@@ -1,0 +1,13 @@
+---------------------------SSH SESSION---------------------------------
+1 - find the ip address. - using "ip a" in debian.
+2 - find the username - using "echo $USER" command.
+3 - run the following command:
+ssh username@ip_address
+
+---------------------------GRAPHIC SESSION------------------------------
+1 - you have to make sure that the entry 'X11Forwarding' is set to 'yes' in the file /etc/ssh/sshd_config, if not set it to 'yes'.
+2 - find the ip address. - using "ip a" in debian.
+3 - find the username - using "echo $USER" command.
+4 - run the following command:
+ssh -X username@ip_address
+then you can run the applications of the VM graphically even if they are not installed int host machine.
